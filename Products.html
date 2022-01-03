@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/style.css" rel="stylesheet" >
+</head>
+<style>
+    body{
+        background-color: #f8fbfe;
+    }
+</style>
+<body>
+    <center>
+    <h1>Products</h1>
+        <div class="d-flex align-items-center">
+            <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-9 text-center">
+                        <section class="section-bg">
+                        <h2 class="section-title">Search</h2>
+                        <form action="forms/Products.php" class="form1" method="POST">
+                        SKU :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name='SKU1'><br><br>
+                        <input type='submit' value='Search' name="search" class="btn">
+                        </form>
+                    </section>
+                    <section class="section-bg">
+                        <h2 class="section">Add a Product</h2>
+                        <form action="forms/Products.php" class="form2" method="POST">
+                        Product ID : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" name='PID'><br><br>
+                        Product Name :&nbsp&nbsp&nbsp&nbsp<input type="text" name='PNAME'><br><br>
+                        No of Units :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" name='Units'><br><br>
+                        SKU :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name='SKU2'><br><br>
+                        Product Features :<input type="text" name='productFeatures'><br><br>
+                        <input type='submit' value='Enter' name="submit" class="btn">
+                        </form>
+                    </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
